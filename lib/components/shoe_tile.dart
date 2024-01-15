@@ -56,7 +56,7 @@ class ShoeTile extends ConsumerWidget {
                       height: 5,
                     ),
                     Text(
-                      '₹${shoe.price}',
+                      '₹ ${shoe.price}',
                       style: TextStyle(
                         color: Colors.grey[600],
                       ),
