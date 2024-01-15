@@ -1,16 +1,16 @@
-# sneaker
+# SneakerShop
 
-A new Flutter project.
+A Flutter based project that implements a mobile app for a shoe retail store. Made using riverpod
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+<img src=https://github.com/Swebi/SneakerShop/assets/82446436/533c791d-92f5-4d48-b1f5-c55257981c6f alt="home" width="200"/>
 
-A few resources to get you started if this is your first Flutter project:
+<img src=https://github.com/Swebi/SneakerShop/assets/82446436/75680e02-708b-48e4-bc2c-1d5ec282f666 alt="shop" width="200"/>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<img src=https://github.com/Swebi/SneakerShop/assets/82446436/ebde632d-b522-4758-8d50-10a3aa117e8e alt="cart" width="200"/>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src=https://github.com/Swebi/SneakerShop/assets/82446436/1f457551-2baa-4cac-a6d5-e48a6f927470 alt="sidebar" width="200"/>
+
+
+
