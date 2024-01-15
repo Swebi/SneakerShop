@@ -15,9 +15,10 @@ List<Shoe> shoeShop = [
   ),
   Shoe(
     name: 'Air Max SC',
-    price: '190',
+    price: '5495',
     imagePath: 'lib/images/air-max-sc.png',
-    description: 'description',
+    description:
+        'Simple, comfortable and cushioned. The mixture of textures creates a durable and lightweight design',
   ),
   Shoe(
     name: 'Dunk Low Se',

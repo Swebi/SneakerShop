@@ -26,9 +26,12 @@ class ShoeTile extends ConsumerWidget {
           ),
 
           // description
-          Text(
-            shoe.description,
-            style: TextStyle(color: Colors.grey[600]),
+          Padding(
+            padding: const EdgeInsets.only(left: 25.0, right: 25, bottom: 15),
+            child: Text(
+              shoe.description,
+              style: TextStyle(color: Colors.grey[600], fontSize: 12),
+            ),
           ),
 
           // price
@@ -65,7 +68,14 @@ class ShoeTile extends ConsumerWidget {
 
               GestureDetector(
                 onTap: () {
-                  ref.watch(userCartProvider).add(shoe);
+                  ref.watch(userCartProvider.notifier).add(shoe);
+                  showDialog(
+                    context: context,
+                    builder: (context) => const AlertDialog(
+                      title: Text("Succesfully Added"),
+                      content: Text("Check your cart"),
+                    ),
+                  );
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20),

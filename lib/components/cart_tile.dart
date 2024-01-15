@@ -8,13 +8,22 @@ class CartTile extends ConsumerWidget {
   CartTile({super.key, required this.shoe});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return ListTile(
-      leading: Image.asset(shoe.imagePath),
-      title: Text(shoe.name),
-      subtitle: Text(shoe.price),
-      trailing: IconButton(
-          onPressed: () => ref.watch(userCartProvider).remove(shoe),
-          icon: const Icon(Icons.delete)),
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 35),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(14),
+        color: Colors.grey[100],
+      ),
+      child: ListTile(
+        leading: Image.asset(
+          shoe.imagePath,
+        ),
+        title: Text(shoe.name),
+        subtitle: Text(shoe.price),
+        trailing: IconButton(
+            onPressed: () => ref.watch(userCartProvider.notifier).remove(shoe),
+            icon: const Icon(Icons.delete)),
+      ),
     );
     ;
   }
